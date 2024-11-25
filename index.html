@@ -1,8 +1,30 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <header>
+            <h1 id="header">Metric/Imperial Unit Conversion</h1>
+            <input id="number-input" type="number" value="20">
+            <button id="convert-btn">Convert</button>
+        </header>
+        <article>
+            <div class="group">
+                <h2 class="group-header">Length (Meter/Feet)</h2>
+                <p id="length-output">text</p>
+            </div>
+            <div class="group">
+                <h2 class="group-header">Volume (Liters/Gallons)</h2>
+                <p id="volume-output">text</p>
+            </div>
+            <div class="group">
+                <h2 class="group-header">Mass (Kilgrams/Pounds)</h2>
+                <p id="mass-output">text</p>
+            </div>
+        </article>
         <script src="index.js"></script>
     </body>
 </html>

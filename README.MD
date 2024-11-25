@@ -1,6 +1,6 @@
-1. Follow the design spec
-2. Generate all conversions when the user clicks "Convert"
-3. Round numbers down to 3 decimal places
+1. ~~Follow the design spec~~ Complete
+2. ~~Generate all conversions when the user clicks "Convert"~~ Complete
+3. ~~Round numbers down to 3 decimal places~~ Complete
 
 Stretch Goals
 1. Pickable color themes
