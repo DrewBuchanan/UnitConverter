@@ -58,13 +58,15 @@ h1 {
     border: 2px solid #B295FF;
     border-radius: 5px;
     color: white;
+    field-sizing: content;
     font-size: 58px;
     font-weight: 800;
     height: 83px;
     line-height: 24px;
     margin: auto;
-    max-width: 200px;
+    max-width: 400px;
     text-align: center;
+    min-width: 140px;
 }
 
 #number-input::-webkit-outer-spin-button,

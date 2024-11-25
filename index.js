@@ -13,7 +13,21 @@ const isRunningAsExtension = window.chrome && chrome.runtime && chrome.runtime.i
 init();
 
 function init() {
-    numberInput.addEventListener("input", function() { if(!numberInput.value) {numberInput.value = 0;} convert(numberInput.value); })
+    numberInput.addEventListener("input", function(e) {
+        if (e.data === ".")
+            return;
+        if(!numberInput.value) {
+            numberInput.value = 0;
+        }
+        if (!numberInput.value.includes(".")) {
+            numberInput.value = parseInt(numberInput.value);
+        }
+        else if (numberInput.value.includes(".") && e.inputType !== "deleteContentBackward" && e.inputType !== "deleteContentForward") {
+            const decimals = numberInput.value.substring(numberInput.value.indexOf(".") + 1).length === 1 ? 1 : 2;
+            numberInput.value = parseFloat(numberInput.value).toFixed(decimals);
+        }
+        convert(numberInput.value);
+    });
     document.querySelector("#light").addEventListener("click", function() {setTheme("light");});
     document.querySelector("#dark").addEventListener("click", function() {setTheme("dark");});
 
