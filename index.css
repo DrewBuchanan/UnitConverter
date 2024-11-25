@@ -3,48 +3,49 @@
 }
 
 body {
-    margin: 100px auto 0px;
-    font-family: "Inter", serif;
-    width: 550px;
-    height: 285px;
     background-color: black;
+    font-family: "Inter", serif;
+    height: 285px;
+    margin: 100px auto 0px;
+    width: 550px;
 }
 
 header {
-    display: flex;
-    gap: 25px;
-    flex-direction: column;
     background-color: #6943ff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 article {
+    background-color: #1F2937;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    background-color: #1F2937;
     padding: 25px;
 }
 
 h1 {
-    line-height: 38px;
+    color: white;
     font-size: 28px;
     font-weight: 800;
-    text-align: center;
-    color: white;
+    line-height: 38px;
     padding-top: 25px;
+    text-align: center;
 }
 
 #number-input {
-    font-size: 58px;
-    font-weight: 800;
+    background-color: 6943ff;
     border: 2px solid #B295FF;
     border-radius: 5px;
-    max-width: 200px;
+    color: white;
+    font-size: 58px;
+    font-weight: 800;
     height: 83px;
-    text-align: center;
-    margin: auto;
     line-height: 24px;
-    background-color: 6943ff;
+    margin: auto;
+    max-width: 200px;
+    text-align: center;
 }
 
 #number-input::-webkit-outer-spin-button,
@@ -55,13 +56,13 @@ h1 {
 
 #convert-btn {
     background-color: white;
-    width: 117px;
+    border: none;
+    border-radius: 5px;
+    color: #3D3D3D;
+    font-size: 24px;
     height: 42px;
     margin: 0px auto 25px auto;
-    font-size: 24px;
-    color: #3D3D3D;
-    border-radius: 5px;
-    border: none;
+    width: 117px;
 }
 
 .group {
@@ -70,16 +71,16 @@ h1 {
 }
 
 .group-header {
-    text-align: center;
+    color: #CCC1FF;
     font-size: 20px;
     line-height: 20px;
-    color: #CCC1FF;
+    text-align: center;
 }
 
 p {
-    text-align: center;
     color: white;
     font-size: 14px;
     line-height: 20px;
     margin-top: 14px;
+    text-align: center;
 }
