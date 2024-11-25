@@ -3,12 +3,11 @@ const literToGallon = 0.264;
 const kilogramToPound = 2.204
 
 const numberInput = document.querySelector("#number-input");
-const convertBtn = document.querySelector("#convert-btn");
 const lengthOutput = document.querySelector("#length-output");
 const volumeOutput = document.querySelector("#volume-output");
 const massOutput = document.querySelector("#mass-output");
 
-convertBtn.addEventListener("click", function () { convert(numberInput.value); });
+numberInput.addEventListener("input", function() { if(!numberInput.value) {numberInput.value = 0;} convert(numberInput.value); })
 
 function convert(number) {
     lengthOutput.innerHTML = generateText("meters", "feet", number, meterToFoot);
