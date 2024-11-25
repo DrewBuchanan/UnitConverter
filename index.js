@@ -20,3 +20,9 @@ function generateText(start, end, number, ratio) {
 }
 
 convert(numberInput.value);
+
+/* If running as Chrome Extension, remove top padding */
+if (window.chrome && chrome.runtime && chrome.runtime.id) {
+    let sheet = window.document.styleSheets[0];
+    sheet.insertRule("body { margin-top: 0px; }", sheet.cssRules.length);
+}

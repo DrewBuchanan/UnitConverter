@@ -4,5 +4,5 @@
 
 Stretch Goals
 1. Pickable color themes
-2. Remove convert button and do conversions on edit
-3. Convert into Chrome extension
+2. ~~Remove convert button and do conversions on edit~~
+3. ~~Convert into Chrome extension~~
