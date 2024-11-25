@@ -1,9 +1,3 @@
-/*
-1 meter = 3.281 feet
-1 liter = 0.264 gallon
-1 kilogram = 2.204 pound
-*/
-
 const meterToFoot = 3.281;
 const literToGallon = 0.264;
 const kilogramToPound = 2.204
@@ -26,4 +20,4 @@ function generateText(start, end, number, ratio) {
     return `${number} ${start} = ${(number * ratio).toFixed(3)} ${end} | ${number} ${end} = ${(number / ratio).toFixed(3)} ${start}`;
 }
 
-convertBtn.click();
+convert(numberInput.value);
